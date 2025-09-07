@@ -1,0 +1,15 @@
+div {
+    align-items: center;
+    text-align: center;
+}
+
+.myprofile {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    border: 6px solid rebeccapurple;
+}
+
+.favicon {
+   
+}
