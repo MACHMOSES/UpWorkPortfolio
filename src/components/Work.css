@@ -1,0 +1,23 @@
+.projects::after{
+    content: "";
+    display: block;
+    width: 110px;
+    height: 4px;
+    background: rebeccapurple;
+    margin-top: 6px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+table{
+    margin-left: 80px;
+}
+
+tr{
+    padding: 0px;
+}
+
+td{
+    padding: 5px;
+    text-align: left;
+}

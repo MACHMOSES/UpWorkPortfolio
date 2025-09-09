@@ -1,0 +1,35 @@
+h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: rebeccapurple;
+    margin-top: 6px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.skillsUlList{
+    margin: 0 auto;
+    display: inline-table;
+    list-style-type:square;
+    margin-left: 80px;
+}
+
+.liSkill {
+    text-align: left;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.liSkill span{
+    font-weight: bold;
+}
+
+

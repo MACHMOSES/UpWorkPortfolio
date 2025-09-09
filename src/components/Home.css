@@ -10,6 +10,30 @@ div {
     border: 6px solid rebeccapurple;
 }
 
+.button {
+    display: block;
+    width: 150px;
+    margin:0 auto;
+    margin-top: 20px;
+    background-color:rebeccapurple;
+    color: aliceblue;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.button:hover{
+    font-size: 20px;
+}
+
+.buttonLink{
+    text-decoration: none;
+    color: white;
+}
+
 .favicon {
-   
+    margin-top: 20px;    
+}
+.favicon img {
+    height: 60px;
+    width: 60px;
 }
