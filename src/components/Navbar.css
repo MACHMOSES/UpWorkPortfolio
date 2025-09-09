@@ -6,20 +6,47 @@
     height: 60px;
 }
 
-.navlink {
-    display: inline;
+@media screen and (max-width:768px){
+    .navbar{
+        gap: 3rem;
+    }
 }
 
-nav h3 {
+@media screen and (max-width:900px ){
+    .navbar{
+        gap: 5rem;
+    }
+}
+
+.navlink {
+    display: inline;
+    
+}
+
+.profileLogo {
     margin-left: 15rem;
     font-family: Cursive;
     font-size: 2rem;
+}
+
+@media only screen and  (max-width: 768px){
+    .profileLogo {
+        margin-left: 10px;
+        font-size:25px;
+        font-family: Cursive;
+    }
 }
 
 .routelink {
     font-weight: bold;
     margin-right: 20px;
     text-decoration: none;
+}
+
+@media only screen and (max-width:768px){
+    .routelink{
+        margin-right: 5px;
+    }
 }
 
 .routelink:hover {
