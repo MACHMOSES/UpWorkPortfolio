@@ -5,7 +5,9 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
+import { useEffect } from 'react';
 function App() {
+  useEffect( () => {}, [])
   return (
     <Router>
       <Navbar/>

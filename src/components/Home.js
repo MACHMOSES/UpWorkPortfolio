@@ -1,5 +1,5 @@
 import { Link, Links} from 'react-router-dom';
-import myProfile from '../statics/IMG_20231023_130632.jpg';
+import myProfile from '../statics/official blue.jpg';
 import './Home.css';
 import linkedin from '../statics/10462330.png';
 import twitter from '../statics/sl_z_072523_61700_05.jpg';

@@ -8,9 +8,9 @@ const Contact = () => {
         e.preventDefault();
         emailjs.sendForm('service_4pm9n2i','template_0focnl7',form.current,{publicKey:'RonycO_shrxYXg_vA,'})
         .then(() => {
-            console.Log('successfully sent')
+            console.log('successfully sent')
         }).catch((error) => {
-            console.Log('FAILED..', error.text)
+            console.log('FAILED..', error.text)
         })
     }
     return(
@@ -24,7 +24,7 @@ const Contact = () => {
                 <input type='text' placeholder='Type Your Subject'/>
                 <textarea placeholder='Type your message'/>
 
-                <button type='submit'>Send</button>
+                <button type='submit' onSubmit={sendEmail}>Send</button>
 
                 </form>
                 
