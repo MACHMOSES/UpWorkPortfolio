@@ -6,19 +6,39 @@ import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   useEffect( () => {}, [])
   return (
-    <Router>
+    <>
       <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/skills" element={<Skills/>}/>
-        <Route path="work"element={<Works/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-      </Routes>
+      <Router >
+      <div className='bg-secondary text-white text-center p-3' style={{margintop:'300px',}}>
+            <div style={{margintop:'300px',}}>
+              <Navbar/>
+              <h1>Welcome to my Portfolio</h1>
+            <p className='pt-3'>Fullstack Developer | React.js | Springboot | SQL</p>
+            </div>
+
+          <div id='home'>
+              <Home/>
+          </div>
+          <div id='about'>
+              <About/>
+          </div>
+          <div id='skills'>
+              <Skills/>
+          </div>
+          <div id='work'>
+              <Works/>
+          </div>
+          <div id='contact'>
+              <Contact/>
+          </div>
+      </div>
     </Router>
+    </>
+   
 
   );
 }

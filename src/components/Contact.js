@@ -1,5 +1,6 @@
-import './Contact.css'
+import React from 'react';
 import { useRef} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from '@emailjs/browser';
 const Contact = () => {
     const form = useRef();
@@ -14,17 +15,28 @@ const Contact = () => {
         })
     }
     return(
-        <div>
-            <h3 className='contacth3'>Contact me by sending your message</h3>
-            <div className='inputfield'>
+        <div className='container-sm|md|lg|xl bg-dark text-white text-center mt-3 p-3 rounded mx-auto'>
+            <h3>Contact me by sending your message</h3>
+            <div className='mx-auto' >
                 <form name='contact' data-netlify='true' ref={form} onSubmit={sendEmail}>
-                <input type='hidden' name='form-name' value='contact'/>
-                <input type='text' placeholder='Type your Name' required/>
-                <input type='email' placeholder='Type your Email' required/>
-                <input type='text' placeholder='Type Your Subject'/>
-                <textarea placeholder='Type your message'/>
+                    <div className='mb-3 mt-3 mx-auto' style={{width:'350px'}}>
+                        <label For='name' className='form-label'>Name</label>
+                        <input type='text' className='form-control'id='name' name='name' placeholder='Type your Name' required/>
+                    </div>
+                    <div className='mb-3 mt-3 mx-auto'style={{width:'350px'}}>
+                        <label For='email' className='form-label'>email</label>
+                        <input type='email' className='form-control' name='email' placeholder='Type your email' required/>
+                    </div >
+                    <div className='mb-3 mt-3 mx-auto' style={{width:'350px'}}>
+                        <label For='sunject' className='form-label'>Subject</label>
+                        <input type='text' className='form-control' name='subject' placeholder='Type your subject' required/>
+                    </div>
+                    <div className='mb-3 mt-3 mx-auto' style={{width:'400px'}}>
+                        <label For='comment' className='form-label'>Comment</label>
+                        <textarea className='form-control' rows='5' placeholder='Type your message'/>
 
-                <button type='submit' onSubmit={sendEmail}>Send</button>
+                    </div>
+                <button type='submit' className='btn btn-primary'>Send</button>
 
                 </form>
                 
