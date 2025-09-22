@@ -1,14 +1,13 @@
 
 import React,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Skills from './Skills';
 
 const Navbar = () => {
     const [home, setHome] = useState(false);
     const [about, setAbout] = useState(false);
     const [skills, setSkills] = useState(false);
     const [work, setWork] = useState(false);
-    const [contact, setContact] = useState(false);
+    
     return (
     <>    
 
@@ -56,15 +55,7 @@ const Navbar = () => {
                         }} onMouseEnter={() => setWork(true)   
                         }
                         onMouseLeave={()=> setWork(false)}>work</a></li>
-                            <li className='nav-item'><a href='#contact' className='nav-link bt bt-bg-primary' style={{
-                            backgroundColor:contact ? 'blue' : 'white',
-                            color:'gray',
-                            textDecoration:'none',
-                            padding:'5px',
-                            borderRadius:'5px'
-                        }} onMouseEnter={() => setContact(true)   
-                        }
-                        onMouseLeave={()=> setContact(false)}>contact</a></li>
+                            
                      </ul>
                 </div>
                 

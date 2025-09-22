@@ -1,9 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import myProfile from '../statics/official blue.jpg';
-import githubImage from '../statics/downloadGithub.png';
-import linkedinImage from '../statics/downloadLinkedin.png';
-import twitterImage from '../statics/imagesTwitter.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
@@ -16,17 +12,6 @@ const Home = () => {
             <p>Welcome to my portfolio website. I am a passionate full stack developer with expertise in React.js, Spring Boot, and SQL. I love creating dynamic and responsive web applications that provide seamless user experiences. Explore my work and skills, and feel free to reach out for collaboration or opportunities!</p>
             <a href="#about" className='btn btn-primary m-2'>About Me</a>
             <a href="#skills" className='btn btn-primary m-2'>Skills</a>            
-            <div className='favicon'>
-                <a href='https://www.linkedin.com/in/wangui-macharia-4466302b7/'>
-                     <img src={linkedinImage} className='rounded-circle img-fluid  m-2' style={{ width:"50px", height:"50px" }} alt="image of instagram Favicon"/>
-                </a> 
-                <a href=''>
-                    <img src={twitterImage} className='rounded-circle img-fluid m-2' style={{ width:"50px", height:"50px" }}alt='image of a linkedin favicon'/> 
-                </a>
-                <a href='https://github.com/MACHMOSES'>
-                    <img src={githubImage} className='rounded-circle img-fluid m-2' style={{ width:"50px", height:"50px" }} alt='image of a '/>
-                </a> 
-            </div>
         </div>
     );
 }

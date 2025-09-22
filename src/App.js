@@ -1,18 +1,17 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Skills from './components/Skills';
 import Works from './components/Works';
-import Contact from './components/Contact';
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   useEffect( () => {}, [])
   return (
-    <>
-      <Navbar/>
-      <Router >
+    
+      
+    <div >
       <div className='bg-secondary text-white text-center p-3' style={{margintop:'300px',}}>
             <div style={{margintop:'300px',}}>
               <Navbar/>
@@ -32,12 +31,9 @@ function App() {
           <div id='work'>
               <Works/>
           </div>
-          <div id='contact'>
-              <Contact/>
-          </div>
       </div>
-    </Router>
-    </>
+    </div>
+    
    
 
   );
